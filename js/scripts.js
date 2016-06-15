@@ -1,6 +1,6 @@
 function loadHalloweenSound() {
   var request = new XMLHttpRequest();
-  request.open('GET', "sounds/Halloween.mp3", true);
+  request.open('GET', 'sounds/Halloween.mp3', true);
   request.responseType = 'arraybuffer';
   request.onload = function() {
     context.decodeAudioData(request.response, function(buffer) {
